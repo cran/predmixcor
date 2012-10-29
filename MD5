@@ -1,0 +1,16 @@
+b5d7a6c63556fd124ead212305907a9d *DESCRIPTION
+01ac9a96c40d3722476328733157e91b *DESCRIPTION.bck
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+29edeb68c4de15dc2e68906c82fab540 *R/do.r
+2e009964b43a121158cf87be2c65f4c6 *R/firstlib.r
+d8aa254a8188988fc9c56ed4ba9d4b7d *R/gendata.r
+9a99da3aabf602eb185e3a1747cbdc5a *R/logsum.r
+04cec8f031251074335347af4da4da2e *R/mh.r
+e0b03b9d8e845b3e69ae8f4918b01a3d *R/predict.r
+cf792f14b6d9e8218df218ead99bd7d2 *R/present.r
+7528701bdfbc626170e550d311f5b3cf *R/prob.r
+d3fedffa60b17d583c7850f6f02e3fef *R/sampling.r
+c7203d99cc48ab53cb14ec069730586e *R/simpson.r
+91a6b3b3583627f4cba9906d3d3760be *man/gendata.Rd
+f33b22bd375bdd2e3a329575ea78138c *man/predmixcor-internal.Rd
+58a2ba5d3aa8a56d4e890c3887a9681f *man/train_predict_mix.Rd

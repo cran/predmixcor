@@ -8,12 +8,12 @@
 \title{Classification rule based on Bayesian  mixture models with feature
        selection bias corrected}
 
-\description{\code{train_redict.bayes} predicts the binary response based on high
-	     dimemsional binary features modeled with Bayesian mixture  models. The
-	     model is trained with Gibbs sampling. A smaller number of features can
-	     be selected based on the correlations with the response. The bias due to
-	     the selection procedure can be corrected. The software is written
-	     entirely with R language. }
+\description{\code{train_predict_mix} predicts the binary response based on
+	     high dimemsional binary features modeled with Bayesian mixture 
+	     models. The model is trained with Gibbs sampling. A smaller number
+	     of features can be selected based on the correlations with the
+	     response. The bias due to the selection procedure can be corrected.
+	     The software is written entirely with R language. }
 
 \usage{
 
@@ -147,12 +147,7 @@ train_predict_mix(
 
 \references{   
 
-	   \item{}{Li, L. (2007), Bayesian Classification and Regression with
-	   High Dimensional Features, PhD thesis, University of Toronto,
-	   available from http://math.usask.ca/~longhai.}
-	   
-	   \item{}{Li, L., Neal, R. M. (2007+), Avoiding Feature Selection Bias in
-	   Bayesian Mixture Models, Manuscript in preparation.}
+http://math.usask.ca/~longhai/publication.html
 
 }	   	  
 
@@ -164,7 +159,7 @@ data <- gendata.mix(20,20,50,50,101,10,c(0.9,0.1))
 #training the model using Gibbs sampling, without correcting for the feature
 #selection bias, then testing on predicting the responses of the test cases, 
 
-uncor <- train_predict_mix(
+predict.uncor <- train_predict_mix(
             test=data$test,train=data$train,k=5,    
             theta0=0,alpha.shape=0.5,alpha.rate=5,no.alpha=5,
 	    common.alpha=FALSE,no.alpha0=100,
@@ -174,7 +169,7 @@ uncor <- train_predict_mix(
             pred.start=10)
 
 #As above, but with the feature selection bias corrected
-cor <-   train_predict_mix(
+predict.cor <-   train_predict_mix(
             test=data$test,train=data$train,k=5,    
             theta0=0,alpha.shape=0.5,alpha.rate=5,no.alpha=5,
 	    common.alpha=FALSE,no.alpha0=100,
